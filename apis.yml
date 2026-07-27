@@ -1,8 +1,25 @@
 aid: folhamatic
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/folhamatic.png
 name: Folhamatic
-description: Folhamatic is a company surfaced as a portfolio company of insight-partners and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Folhamatic (IOB Folhamatic Group) is a Brazilian developer of integrated accounting, payroll,
+  and fiscal/tax software for accounting firms and businesses, founded in 1990 and headquartered in
+  Americana, Sao Paulo. Its product line includes Folhamatic Payroll for personnel management and
+  electronic files, Electronic Point Control for time-clock management, the Folhamatic Accounting
+  system for management reporting, and Folhamatic Written Tax for tax departments. At acquisition it
+  served more than 11,000 companies with 500-plus employees. Folhamatic was acquired by the UK's Sage
+  Group in June 2012 and now operates as part of Sage in Brazil. The company publishes no first-party
+  public developer API, and the historic folhamatic.com.br domain no longer serves a live site.
 url: https://raw.githubusercontent.com/api-evangelist/folhamatic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,9 +29,20 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
+x-part-of: sage
+x-acquired: '2012-06'
 tags:
 - Company
+- Accounting
+- Payroll
+- Tax
+- Fiscal
+- ERP
+- Business Management
+- Brazil
+- Software
+- Sage
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/folhamatic-domain-security.yml
 - type: Website
   url: http://www.folhamatic.com.br/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
